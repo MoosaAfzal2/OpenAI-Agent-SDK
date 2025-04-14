@@ -1,0 +1,22 @@
+[project]
+name = "personal-study-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "MoosaAfzal2", email = "moosaafzal2002@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "chainlit>=2.4.400",
+    "openai-agents>=0.0.9",
+    "tavily-python>=0.5.4",
+]
+
+[project.scripts]
+personal-study-assistant = "personal_study_assistant.main:main"
+personal-study-assistant-app = "personal_study_assistant.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
